@@ -5,7 +5,7 @@
 
 require("class/class-pdoconnect.php");
 
-$conn = new PDOConnect('root' , 'root' , 'localhost' , 'todoapp');
+$conn = new PDOConnect('b59b5a37513c8b' , '2c6935ff' , 'us-cdbr-iron-east-02.cleardb.net' , 'heroku_bcd74fb2c06bd97');
 $conn = $conn->conn;
 
 
