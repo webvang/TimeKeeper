@@ -140,7 +140,13 @@ for(let i =0; i < Lis.length; i++){
         if(e.target.className == 'far fa-check-square todoicons'){
 		  let myKey = Array.from(e.target.closest('ul').children);
 		  let keyIndex = myKey.indexOf(e.target.closest('li'));
-          window.location.href = "inc/updatecompletestatus.php?listcontent="+(e.target.closest('li').textContent.trim());
+           Li[keyIndex].style.backgroundColor = "seagreen";
+           Li[keyIndex].itemindex].style.color = "white";
+           Li[keyIndex].itemindex].style.borderBottomColor = "wheat";
+           let icon = Li[keyIndex].children;
+           icon[1].style.color = 'white';
+           icon[2].style.color = 'white';
+           icon[3].style.color = 'white';
           window.location.href = "inc/updatecompletestatus.php?listindex="+keyIndex;
           todoComplete();
           //e.target.closest('li').style.backgroundColor = "seagreen";
@@ -150,6 +156,13 @@ for(let i =0; i < Lis.length; i++){
                  
  		  let myKey = Array.from(e.target.closest('ul').children);
 		  let keyIndex = myKey.indexOf(e.target.closest('li'));
+           Li[keyIndex].style.backgroundColor = "tomato";
+           Li[keyIndex].itemindex].style.color = "white";
+           Li[keyIndex].itemindex].style.borderBottomColor = "wheat";
+           let icon = Li[keyIndex].children;
+           icon[1].style.color = 'white';
+           icon[2].style.color = 'white';
+           icon[3].style.color = 'white';
           window.location.href = "inc/updateincompletestatus.php?listindex="+keyIndex;
           todoInComplete();
           //e.target.closest('li').style.backgroundColor = "tomato";   
