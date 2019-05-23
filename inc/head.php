@@ -4,6 +4,7 @@
         <title><?php echo $currentApp;  ?></title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width , initial-scale=1">
+        <script src="lottie.js"></script>
 		<link rel="stylesheet" href="css/normalize.css">
 		<?php echo '<link rel="stylesheet" href="css/todo.css">' ?>
 		<?php echo '<link rel="stylesheet" href="css/animate.css">' ?>
