@@ -114,7 +114,6 @@ if($result){
     <form method="POST" class="todoinputform">
 			<input type="text" name="todoinput" id="todoinput" required placeholder="(e.g.) walk the dog...">
 			<input type="submit" name="addactivity" value="Add activity" class="button" id="submit">
-            <a href="index.php?action=delete-all" id="deleteall"><i class="fas fa-power-off" title="logout"></i></a>
 	</form>
 
 	<ul class="ul">
@@ -128,7 +127,7 @@ if($result){
 		foreach( $result as $listitem){
             foreach($listitem as $items){
                 if($items != "")// SANITIZED HERE
-                echo "<li><i class='fas fa-asterisk'></i>&nbsp;&nbsp;&nbsp;$items<i class='far fa-trash-alt todoicons'></i>&nbsp;&nbsp;<i class='far fa-window-close todoicons'></i>&nbsp;&nbsp;<i class='far fa-check-square todoicons'></i></li>";
+                echo "<li><i class='fas fa-asterisk'></i>&nbsp;&nbsp;&nbsp;$items<i class='far fa-trash-alt todoicons'></i>&nbsp;&nbsp;<i class='fas fas fa-sticky-note todoicons'></i>&nbsp;&nbsp;<i class='far fa-window-close todoicons'></i>&nbsp;&nbsp;<i class='far fa-check-square todoicons'></i></li>";
             }
 		}
         
@@ -136,7 +135,7 @@ if($result){
 		foreach( $getstarted as $listitem){
             foreach($listitem as $items){
                 if($items != "")// SANITIZED HERE
-                echo "<li><i class='fas fa-asterisk'></i>&nbsp;&nbsp;&nbsp;$items<span class='far fa-trash-alt todoicons'></span>&nbsp;&nbsp;<i class='far fa-window-close todoicons'></i>&nbsp;&nbsp;<i class='far fa-check-square todoicons'></i></li>";
+                echo "<li><i class='fas fa-asterisk'></i>&nbsp;&nbsp;&nbsp;$items</li>";
             }
 		}
 		
@@ -152,5 +151,5 @@ if($result){
         <span class="countstatus">complete</span>&nbsp;&nbsp;<span id='count1'>0</span>&nbsp;&nbsp;
         <span class="countstatus">in progress</span>&nbsp;&nbsp;<span id='count2'>0</span>&nbsp;&nbsp;
         <span class="countstatus">pending</span>&nbsp;&nbsp;<span id='count3'>0</span>&nbsp;&nbsp;
-        <span class="usergreeting"><?php echo "Welcome ".$welcome ; ?></span>&nbsp;&nbsp;
+        <span class="usergreeting"><?php echo $welcome ; ?> <a href="index.php?action=delete-all" id="deleteall"><i class="fas fa-power-off" title="logout"></i></a></span>
      </div>

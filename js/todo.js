@@ -78,6 +78,7 @@ let completeColor = ()=>{
                icon[1].style.color = 'white';
                icon[2].style.color = 'white';
                icon[3].style.color = 'white';
+               icon[4].style.color = 'white';
            }
            
            
@@ -110,6 +111,7 @@ let incompleteColor = ()=>{
                icon[1].style.color = 'white';
                icon[2].style.color = 'white';
                icon[3].style.color = 'white';
+               icon[4].style.color = 'white';
            }
            
            
