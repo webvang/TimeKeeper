@@ -4,6 +4,7 @@ let btag = document.querySelector('b');
 var count1 = document.getElementById('count1');
 var count2 = document.getElementById('count2');
 var count3 = document.getElementById('count3');
+var docBody = document.querySelector('body');
 var hiddenindex = document.getElementById('listindex');
 let todoInput = document.getElementById('todoinput');
     todoInput.focus();
@@ -12,6 +13,12 @@ let todoInput = document.getElementById('todoinput');
 
 
 /////////           AJAX REQUESTS FUNCTION              /////////////
+
+
+docBody.addEventListener('contextmenu' , (e)=>{
+    e.preventDefault();
+})
+
 
 let todoComplete = ()=>{
     let xhttp = new XMLHttpRequest();
