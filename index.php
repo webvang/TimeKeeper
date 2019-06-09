@@ -54,8 +54,7 @@ if($_GET['action'] == 'alarm'){
 			<div class="container" id="first-container">
 					<header>
 						<div class="main-header">
-							<img src="image/codespace.svg" width="150px"><br>
-							<h1><i class="fas fa-tasks"></i><a href="index.php">TimeKeeper</a><b>Desktop</b></h1>
+							<h1><i class="fas fa-tasks"></i><a href="index.php">TimeKeeper</a></h1>
                             
                             <?php if(!($currentApp == "ToDoApp")){?>
 							<a href="index.php?app=signup"><p class="button"><i class="fas fa-user-plus"></i>&nbsp;Signup</p></a>&nbsp;&nbsp;&nbsp;
