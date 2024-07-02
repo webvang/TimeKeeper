@@ -15,7 +15,7 @@ class PDOConnect
             
             
             
-        $this->conn = new PDO("mysql:host=$this->servername; dbname=$this->database", $this->username , $this->password);
+        $this->conn = new PDO("mysqli:host=$this->servername; dbname=$this->database", $this->username , $this->password);
             
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         //echo "Connected Successfully";
